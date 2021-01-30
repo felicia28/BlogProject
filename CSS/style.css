@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "shakerato";
+    src: url(../Fonts/Shakerato.otf);
+  }
+
+@font-face {
+    font-family: "stay-home";
+    src: url(../Fonts/STAY-HOME.otf);
+}
+
+body {
+    font: 16px Arial, sans-serif;
+    color: rgb(102, 102, 102);
+}
+
+h1,
+h2 {
+    font: 20px "shakerato", sans-serif;
+    margin: 0;
+    color: rgb(102, 102, 102);
+}
+
+/*** Header ***/
+
+.header {
+    background-image: url(../Images/banner.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.logo {
+    background-color: rgb(0, 0, 0);
+    padding: 5% 0;
+    text-align: center;
+}
+
+.logo h1 {
+    font: 38px "shakerato", sans-serif;
+    letter-spacing: 1px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.logo h1 span {
+    color: rgb(255, 255, 255);
+}
+
+/*** Navigation ***/
+
+.navigation {
+    background-color: rgb(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.navigation p {
+    font: 26px "stay-home", sans-serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    margin: 6% 0;
+}
+
+.navigation p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.banner p {
+    text-indent: -9999px;
+}
+
+.main {
+    margin: 8%;
+}
+
+/*** Footer ***/
+
+footer {
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font: 16px "stay-home", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+footer p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+@media (min-width: 765px) {
+    .logo {
+        padding: 0 0 0 1%;
+        background: none;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    .header {
+        background-image: none;
+        background-color: rgb(0, 0, 0, 0.8);
+    }
+
+    .banner {
+        background-image: url(../Images/banner.jpg);
+        min-height: 200px;
+        background-size: cover;
+    }
+
+    .navigation {
+        background: none;
+    }
+
+    .navigation p {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .navigation p a:hover {
+        text-decoration: underline;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .main {
+        margin: 3%;
+    }
+
+    footer p {
+        text-align: left;
+        padding: 0 0 0 1%;
+    }
+
+    footer p a:hover {
+        text-decoration: underline;
+    }
+}
