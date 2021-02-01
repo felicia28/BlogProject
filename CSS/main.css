@@ -28,9 +28,18 @@ footer {
     grid-area: footer;
 }
 
+.footer-inner-grid {
+    width: 100%;
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
 }
 
 @media (min-width:765px) {
@@ -75,5 +84,33 @@ footer {
 
     .banner {
         grid-area: banner;
+    }
+
+    .footer-inner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "copyright social-media";
+    }
+
+    .copyright {
+        width: 100%;
+        grid-area: copyright;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .social-media {
+        width:100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        grid-area: social-media;
+        align-items: center;
+        margin: 0;
+    }
+
+    .social-media img {
+        width: 37%;
     }
 }
