@@ -35,7 +35,7 @@ h2 {
 }
 
 .logo h1 {
-    font: 38px "shakerato", sans-serif;
+    font: 27px "shakerato", sans-serif;
     letter-spacing: 1px;
     line-height: 48px;
     text-transform: uppercase;
@@ -43,6 +43,11 @@ h2 {
 
 .logo h1 span {
     color: rgb(255, 255, 255);
+}
+
+.logo h1 a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
 }
 
 /*** Navigation ***/
@@ -72,6 +77,10 @@ h2 {
     margin: 8%;
 }
 
+u {
+    text-decoration-style: dotted;
+}
+
 /*** Footer ***/
 
 footer {
@@ -81,7 +90,7 @@ footer {
 
 footer p {
     color: rgb(255, 255, 255);
-    font: 16px "stay-home", sans-serif;
+    font: 24px "stay-home", sans-serif;
     letter-spacing: 1px;
     text-align: center;
 }
@@ -89,6 +98,16 @@ footer p {
 footer p a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+.social-media img {
+    width: 50%;
+}
+
+.social-media {
+    text-align: center;
+    margin: 6% auto 5%;
+    justify-content: center;
 }
 
 @media (min-width: 765px) {
@@ -135,6 +154,7 @@ footer p a {
 
     footer p {
         text-align: left;
+        font-size: 18px;
         padding: 0 0 0 1%;
     }
 
